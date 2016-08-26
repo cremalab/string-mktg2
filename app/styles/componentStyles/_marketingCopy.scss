@@ -1,0 +1,161 @@
+
+
+.stringLogoMarketing{
+  width:65%;
+  margin:0 0 3rem 0;
+}
+
+.marketingHeader{
+  font-size:3rem;
+  color:$light-green;
+  margin:0 0 1rem 0;
+}
+
+.marketingSubHeader{
+  padding:0;
+  margin:0 0 3rem 0;
+  max-width:320px;
+  font-size:1.4rem;
+}
+
+
+
+.smallPlayImage svg{
+  g{
+    fill:$light-green;
+  }
+  text-align:right;
+  height:30px;
+  padding:0 1rem 0 0;
+  width:45px;
+}
+
+.playVideo{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  flex-wrap:nowrap;
+  align-items: center;
+  margin:0 0 5rem 0;
+}
+
+.playText{
+  width:85%;
+  font-weight:700;
+}
+
+.emailInputContainer{
+  width:100%;
+}
+
+.input{
+  position: relative;
+  z-index: 1;
+  display:inline-block;
+  width:100%;
+  vertical-align: top;
+  height:45px;
+}
+
+.inputField {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: 400;
+  height:45px;
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+
+}
+input.inputField:focus{
+
+    outline:none !important;
+
+}
+
+.input--string {
+  overflow: hidden;
+  padding-top: 1em;
+
+}
+
+.inputField--string {
+  padding:1.5em 0 0.75em 1em;
+  width: 100%;
+  background: transparent;
+  stroke: $light-green;
+  font-size: 1.25em;
+  border-bottom:2px solid $light-green;
+}
+
+.emailSubmit{
+  position: absolute;
+  right:0;
+  bottom:.5em;
+  background:transparent;
+  color:$light-green;
+  border:none;
+}
+
+
+.invalidEmail{
+
+  color:red;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity  1s ease;
+  -o-transition: opacity  1s ease;
+  -ms-transition: opacity  1s ease;
+  transition: opacity  1s ease;
+}
+
+.emailSubmitted{
+
+  color:$light-green;
+}
+
+
+
+.inputField::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $light-green;
+  padding-left:1em;
+  font-size:16px;
+  font-family: 'Lato', Arial, SansSerif;
+  letter-spacing: 2px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $light-green;
+  padding-left:1em;
+  font-family: 'Lato', Arial, SansSerif;
+  letter-spacing: 2px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $light-green;
+  padding-left:1em;
+  font-family: 'Lato', Arial, SansSerif;
+  letter-spacing: 2px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $light-green;
+  padding-left:1em;
+  font-family: 'Lato', Arial, SansSerif;
+  letter-spacing: 2px;
+}
+
+
+
+
+@include media("<desktop") {
+  .marketingHeader{
+    font-size:2rem;
+  }
+
+  .marketingSubHeader{
+
+    font-size:1rem;
+  }
+}
