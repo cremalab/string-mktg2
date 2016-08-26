@@ -358,7 +358,7 @@ body {
   max-width: 90%;
   padding: 10px;
   float: right;
-  box-shadow: 0 2px 4px 1px rgba(0,0,0,.5);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
   margin: 5px 14px 5px 11px;
 }
 
@@ -384,7 +384,7 @@ body {
   float: left;
   padding: 10px;
   margin: 5px 45px 5px 11px;
-  box-shadow: 1px 2px 9px 0 rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.4);
 }
 
 .botP img {
@@ -414,7 +414,7 @@ body {
 }
 
 .humanSquare {
-  right: 8px;
+  right: 9px;
   background-color: #45cb85;
   box-shadow: 2px 2px 1px -1px rgba(0,0,0,.5);
 }
@@ -581,4 +581,4 @@ input.inputField:focus {
   width: 100%;
   height: 100%;
 }
-/*# sourceMappingURL=style.bb40678f77e20c4ab213.css.map*/
+/*# sourceMappingURL=style.eea51cc4fa4f295bfd38.css.map*/
