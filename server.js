@@ -11,7 +11,7 @@ var webPath = baseDir + '/';
 
 
 
-const mongoURL = require('./envConfig');
+const mongoURL =  process.env.mongoURL || require('./envConfig');
 mongoose.connect(mongoURL);
 
 var emailSignup = mongoose.model('Signup', {_id:String, email:String})
