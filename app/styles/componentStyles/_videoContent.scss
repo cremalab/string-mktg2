@@ -18,3 +18,46 @@
   height: 100%;
 }
 
+
+.videoCover{
+  display:flex;
+  position: absolute;
+  background-color: rgb(0,0,0);
+  opacity: 1;
+  height:100%;
+  width:100%;
+
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  transition: opacity 5s ease-out;
+  -moz-transition: opacity 5s ease-out;
+  -webkit-transition: opacity 5s ease-out;
+
+}
+
+.disappear{
+  opacity:0;
+
+
+}
+
+.largePlayImage{
+  cursor:pointer;
+  g{
+
+  }
+}
+
+
+@-webkit-keyframes z-index {
+  0%   { z-index:2 }
+  100% {z-index:-1;}
+}
+
+@keyframes z-index {
+  0%   { z-index:2 }
+  100% {z-index:-1;}
+}
