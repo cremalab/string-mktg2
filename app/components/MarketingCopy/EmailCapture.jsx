@@ -14,11 +14,10 @@ export default class EmailCapture extends React.Component {
           emailSubmitted:false
         }
     );
-    console.log('Will  Mount state', this.state)
   }
 
   componentDidMount(){
-    console.log('Did Mount State', this.state)
+
   }
 
 
@@ -59,7 +58,6 @@ export default class EmailCapture extends React.Component {
 
     this.handleChange = (event)=>{
       let value = event.target.value;
-      console.log('Value', value);
       this.setState({emailField:value})
     };
 
@@ -69,12 +67,10 @@ export default class EmailCapture extends React.Component {
     }
 
     this.onFocus = ()=>{
-      console.log('Focused');
       this.setState({placeHolderText:''});
     }
 
     this.onBlur = ()=>{
-      console.log('Focused');
       this.setState({placeHolderText:'Email Address'});
     }
 
