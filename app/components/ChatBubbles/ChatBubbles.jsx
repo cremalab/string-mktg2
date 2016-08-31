@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
 import ChatBubble from './ChatBubble';
 import {chatData} from './chat'
@@ -9,8 +8,6 @@ import {chatData} from './chat'
 
 class ChatBubbles extends React.Component{
 
-
-
   componentDidMount(){
     const windowWidth = window.innerWidth;
 
@@ -18,33 +15,24 @@ class ChatBubbles extends React.Component{
       //Do nothing for scrolling
     }else{
       var mouseWheelEvent = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
-
       if (document.attachEvent) { //if IE (and Opera depending on user setting)
         document.attachEvent("on"+mouseWheelEvent, this.mouseWheelEventHandler);
-
       } else if (document.addEventListener) { //WC3 browsers
         document.addEventListener(mouseWheelEvent, this.mouseWheelEventHandler, false);
       }
       const BubbleContainer = document.getElementById('BubbleContainer');
       const MarketingCopyContainer = document.getElementById('MarketingCopyContainer');
     }
-
-
-
   }
 
   constructor(props){
     super(props);
     window.onScroll=function(e){
-      console.log('scroll',e);
     }
-
-
   }
 
 
   render(){
-
     return (
       <div className="chatBubbleContainer"  id="BubbleContainer" >
         {chatData.map((item) =>{
@@ -53,7 +41,6 @@ class ChatBubbles extends React.Component{
       </div>
     )
   }
-
 
   mouseWheelEventHandler(e) {
 
@@ -65,7 +52,7 @@ class ChatBubbles extends React.Component{
     var delta = event.detail ? event.detail : event.wheelDelta; //check for detail first so Opera uses that instead of wheelDelta
     // console.log('TYPEOF WHEELDELTA', typeof event.wheelDelta);
     if(typeof event.wheelDelta=='undefined'){
-
+      //This is a firefox Browser, do the weird calculations
       if(allowDivScroll && !atBottom){
         event.preventDefault();
         BubbleContainer.scrollTop = BubbleContainer.scrollTop+delta*3;
@@ -74,6 +61,7 @@ class ChatBubbles extends React.Component{
         //Do nothing
       }
     }else{
+      //This is chrome/safari
       if(allowDivScroll && !atBottom){
         event.preventDefault();
         BubbleContainer.scrollTop = BubbleContainer.scrollTop-delta;
@@ -82,18 +70,7 @@ class ChatBubbles extends React.Component{
         //Do nothing
       }
     }
-
-
-
-
   }
 }
 
-
-function mapStateToProps(state){
-  return{
-    count:state.CounterReducer.count,
-  }
-}
-
-export default connect(mapStateToProps)(ChatBubbles)
+export default ChatBubbles

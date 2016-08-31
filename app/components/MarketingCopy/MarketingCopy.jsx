@@ -1,6 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
-
 
 import EmailCapture from './EmailCapture';
 import SVGInline from 'react-svg-inline'
@@ -8,15 +6,7 @@ const playImage = require('../../images/play.svg');
 const logoLarge = require('../../images/logo-lg.png')
 
 
-
-
-
-
-
 class MarketingCopy extends React.Component{
-
-  componentDidMount(){
-  }
 
   constructor(props){
     super(props);
@@ -41,11 +31,5 @@ class MarketingCopy extends React.Component{
 }
 
 
-function mapStateToProps(state){
-  return{
-    count:state.CounterReducer.count,
-  }
-}
-
-export default connect(mapStateToProps)(MarketingCopy)
+export default MarketingCopy
 

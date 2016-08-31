@@ -11,9 +11,6 @@ export default class ChatBubble extends React.Component {
 
   render(){
     const {data} = this.props;
-
-
-
     const BotChat = ({data}) => (
       <div className="chatBubble botChatBubble">
 
@@ -53,9 +50,5 @@ export default class ChatBubble extends React.Component {
     }else{
       return (<HumanChat data={data} />)
     }
-
-
-
-
   }
 }

@@ -1,16 +1,9 @@
 import React from 'react';
 
 class App extends React.Component {
-
-
-  componentWillMount(){
-  }
-
   constructor(props){
     super(props)
   }
-
-
 
   render(){
     return (

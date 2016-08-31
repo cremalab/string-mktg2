@@ -1,5 +1,4 @@
 import React from 'react';
-
 import axios from 'axios';
 
 
@@ -15,13 +14,6 @@ export default class EmailCapture extends React.Component {
         }
     );
   }
-
-  componentDidMount(){
-
-  }
-
-
-
   constructor(props){
 
 
@@ -51,8 +43,8 @@ export default class EmailCapture extends React.Component {
         this.setState(
             {
               validEmail:false,
-              emailSubmitted:false}
-        )
+              emailSubmitted:false
+            })
       }
     };
 
