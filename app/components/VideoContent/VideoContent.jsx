@@ -37,9 +37,11 @@ class VideoContent extends React.Component{
     var videoCoverClasses = 'videoCover';
     if(this.state.clicked) videoCoverClasses += ' disappear';
     const vidOpts = {
+      modestbranding:0,
       playerVars:{
         controls:0,
-        showinfo:0
+        showinfo:0,
+        modestbranding:0
       }
     };
 
