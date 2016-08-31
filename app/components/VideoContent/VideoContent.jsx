@@ -36,6 +36,11 @@ class VideoContent extends React.Component{
   render(){
     var videoCoverClasses = 'videoCover';
     if(this.state.clicked) videoCoverClasses += ' disappear';
+    const vidOpts = {
+      playerVars:{
+        controls:0
+      }
+    };
 
     return (
       <div id="VideoContent">
@@ -43,7 +48,7 @@ class VideoContent extends React.Component{
           <div className={videoCoverClasses} onClick={this.playHandleClick}><SVGInline svg={playImage} className="largePlayImage"/></div>
           {
             this.state.clicked &&
-            <ReactYoutube videoId="1Nc8a9gnDso" onReady={this._onReady}/>
+            <ReactYoutube videoId="1Nc8a9gnDso" opts={vidOpts} onReady={this._onReady}/>
           }
 
           </div>
