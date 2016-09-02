@@ -334,7 +334,7 @@ body {
     height: 100%;
     max-height: 1000vh;
     width: 100%;
-    padding: 10rem 2rem 0 6rem;
+    padding: 10rem 3rem 0;
     order: 2;
   }
 }
@@ -629,4 +629,4 @@ input.inputField:focus {
     z-index: -1;
   }
 }
-/*# sourceMappingURL=style.fb05cfd8f3de53d97988.css.map*/
+/*# sourceMappingURL=style.76761a0f4438c3c1cea1.css.map*/
