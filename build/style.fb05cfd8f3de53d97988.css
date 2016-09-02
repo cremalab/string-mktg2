@@ -361,6 +361,7 @@ body {
   max-width: 90%;
   padding: 10px;
   float: right;
+  color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
   margin: 5px 14px 5px 11px;
 }
@@ -588,8 +589,8 @@ input.inputField:focus {
 .videoCover {
   display: flex;
   position: absolute;
-  background-color: #000;
-  opacity: 1;
+  background: url("https://s3.amazonaws.com/crema-string/images/bridge.jpg");
+  background-size: contain;
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -606,6 +607,7 @@ input.inputField:focus {
 
 .largePlayImage {
   cursor: pointer;
+  z-index: 2;
 }
 
 @-webkit-keyframes z-index {
@@ -627,4 +629,4 @@ input.inputField:focus {
     z-index: -1;
   }
 }
-/*# sourceMappingURL=style.493fb7f4ccf27dd05514.css.map*/
+/*# sourceMappingURL=style.fb05cfd8f3de53d97988.css.map*/
