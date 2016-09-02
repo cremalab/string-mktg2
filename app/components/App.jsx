@@ -1,15 +1,27 @@
 import React from 'react';
 
+
+
 class App extends React.Component {
+
+
   constructor(props){
     super(props)
   }
 
   render(){
+
+
+
     return (
-      <div className="bodyContainer" >
+        <span>
+
+          <div className="bodyContainer" >
           {this.props.children}
-      </div>
+        </div>
+        </span>
+
+
     )
   }
 }
