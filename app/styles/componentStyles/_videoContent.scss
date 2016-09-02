@@ -22,8 +22,10 @@
 .videoCover{
   display:flex;
   position: absolute;
-  background-color: rgb(0,0,0);
-  opacity: 1;
+  //background-color: rgba(0,0,0, 0.2);
+  background:url('https://s3.amazonaws.com/crema-string/images/bridge.jpg');
+  background-size:contain;
+  //opacity: 1;
   height:100%;
   width:100%;
 
@@ -46,11 +48,17 @@
 
 .largePlayImage{
   cursor:pointer;
+  z-index:2;
   g{
 
   }
 }
 
+
+.posterImage{
+  height:100%;
+  width:100%;
+}
 
 @-webkit-keyframes z-index {
   0%   { z-index:2 }

@@ -48,10 +48,13 @@ class VideoContent extends React.Component{
     return (
       <div id="VideoContent">
         <div className="embed-container">
-          <div className={videoCoverClasses} onClick={this.playHandleClick}><SVGInline svg={playImage} className="largePlayImage"/></div>
+          <div className={videoCoverClasses} onClick={this.playHandleClick}>
+            <SVGInline svg={playImage} className="largePlayImage"/>
+
+          </div>
           {
             this.state.clicked &&
-            <ReactYoutube videoId="1Nc8a9gnDso" opts={vidOpts} onReady={this._onReady}/>
+            <ReactYoutube videoId="_gyh7GNmSXA" opts={vidOpts} onReady={this._onReady}/>
           }
 
           </div>
